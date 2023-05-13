@@ -1,0 +1,567 @@
+Jonathan Benusa 5.5.2023 Assignment 7
+ 
+ 
+ 
+ Initializing buffers
+Expected values: 10 512 size buffers, Status Ok
+
+Free Buffer Count:
+The nuber of 511 word buffers is: 10.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Low on memory = False
+
+Requesting 700 
+Expected values: 
+Requesting 700
+ Expected values: 
+ Error code: -2
+
+ Actual = Error Response: -2
+
+Request buffer size 6 
+ Expected values: 
+ 9 510 size buffers, 1 254 size buffer, 1 126 size buffer, 
+ 1 62 size buffer, 1 30 size buffer, 1 14 size buffer and 1 6 size buffer, Status OK
+
+Requesting 6
+ Expected values: 
+Assigned Address: 0
+
+ Actual = Assigned address is: [0, 7]
+
+The nuber of 511 word buffers is: 9.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Using up all memory starting now:
+
+Requesting 511
+ Expected values: 
+Assigned address: [511, 511]
+
+ Actual = Assigned address is: [511, 511]
+
+The nuber of 511 word buffers is: 8.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [1022, 511]
+
+ Actual = Assigned address is: [1022, 511]
+
+The nuber of 511 word buffers is: 7.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [1533, 511]
+
+ Actual = Assigned address is: [1533, 511]
+
+The nuber of 511 word buffers is: 6.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [2044, 511]
+
+ Actual = Assigned address is: [2044, 511]
+
+The nuber of 511 word buffers is: 5.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [2555, 511]
+
+ Actual = Assigned address is: [2555, 511]
+
+The nuber of 511 word buffers is: 4.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [3066, 511]
+
+ Actual = Assigned address is: [3066, 511]
+
+The nuber of 511 word buffers is: 3.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [3577, 511]
+
+ Actual = Assigned address is: [3577, 511]
+
+The nuber of 511 word buffers is: 2.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = False
+
+Requesting 511
+ Expected values: 
+Assigned address: [4088, 511]
+
+ Actual = Assigned address is: [4088, 511]
+
+The nuber of 511 word buffers is: 1.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = True
+
+Requesting 511
+ Expected values: 
+Assigned address: [4599, 511]
+
+ Actual = Assigned address is: [4599, 511]
+
+The nuber of 511 word buffers is: 0.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+Memory is tight = True
+
+Requesting 511
+ Expected values: 
+Error Code: -1
+
+ Error response: -1
+
+Returning size 511 Buffers
+
+Current Status: 
+The nuber of 511 word buffers is: 9.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 1.
+The nuber of 63 word buffers is: 1.
+The nuber of 31 word buffers is: 1.
+The nuber of 15 word buffers is: 1.
+The nuber of 7 word buffers is: 1.
+
+
+
+Returning size 7 Buffers
+
+Current Status: 
+The nuber of 511 word buffers is: 10.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+
+
+Requesting 21 254 sized buffers:
+
+Requesting 254
+ Expected values: 
+Assigned address: 0
+
+ Actual = Assigned address is: [0, 255]
+
+The nuber of 511 word buffers is: 9.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 255
+
+ Actual = Assigned address is: [255, 255]
+
+The nuber of 511 word buffers is: 9.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 511
+
+ Actual = Assigned address is: [511, 255]
+
+The nuber of 511 word buffers is: 8.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 766
+
+ Actual = Assigned address is: [766, 255]
+
+The nuber of 511 word buffers is: 8.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 1022
+
+ Actual = Assigned address is: [1022, 255]
+
+The nuber of 511 word buffers is: 7.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 1277
+
+ Actual = Assigned address is: [1277, 255]
+
+The nuber of 511 word buffers is: 7.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 1533
+
+ Actual = Assigned address is: [1533, 255]
+
+The nuber of 511 word buffers is: 6.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 1788
+
+ Actual = Assigned address is: [1788, 255]
+
+The nuber of 511 word buffers is: 6.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 2044
+
+ Actual = Assigned address is: [2044, 255]
+
+The nuber of 511 word buffers is: 5.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 2299
+
+ Actual = Assigned address is: [2299, 255]
+
+The nuber of 511 word buffers is: 5.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 2555
+
+ Actual = Assigned address is: [2555, 255]
+
+The nuber of 511 word buffers is: 4.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 2810
+
+ Actual = Assigned address is: [2810, 255]
+
+The nuber of 511 word buffers is: 4.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 3066
+
+ Actual = Assigned address is: [3066, 255]
+
+The nuber of 511 word buffers is: 3.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 3321
+
+ Actual = Assigned address is: [3321, 255]
+
+The nuber of 511 word buffers is: 3.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 3577
+
+ Actual = Assigned address is: [3577, 255]
+
+The nuber of 511 word buffers is: 2.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 3832
+
+ Actual = Assigned address is: [3832, 255]
+
+The nuber of 511 word buffers is: 2.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = False
+
+Requesting 254
+ Expected values: 
+Assigned address: 4088
+
+ Actual = Assigned address is: [4088, 255]
+
+The nuber of 511 word buffers is: 1.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = True
+
+Requesting 254
+ Expected values: 
+Assigned address: 4343
+
+ Actual = Assigned address is: [4343, 255]
+
+The nuber of 511 word buffers is: 1.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = True
+
+Requesting 254
+ Expected values: 
+Assigned address: 4599
+
+ Actual = Assigned address is: [4599, 255]
+
+The nuber of 511 word buffers is: 0.
+The nuber of 255 word buffers is: 1.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = True
+
+Requesting 254
+ Expected values: 
+Assigned address: 4854
+
+ Actual = Assigned address is: [4854, 255]
+
+The nuber of 511 word buffers is: 0.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+Memory is tight = True
+
+Requesting 254
+ Expected values: 
+Error Code: -1
+
+ Error response: -1
+
+Returning size 254 Buffers
+
+Current Status: 
+The nuber of 511 word buffers is: 10.
+The nuber of 255 word buffers is: 0.
+The nuber of 127 word buffers is: 0.
+The nuber of 63 word buffers is: 0.
+The nuber of 31 word buffers is: 0.
+The nuber of 15 word buffers is: 0.
+The nuber of 7 word buffers is: 0.
+
+
+
+Free buffer at the end: [[[0, 511], [511, 511], [1022, 511], [1533, 511], [2044, 511], [2555, 511], [3066, 511], [3577, 511], [4088, 511], [4599, 511]], [], [], [], [], [], []]

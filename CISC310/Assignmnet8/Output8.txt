@@ -1,0 +1,17 @@
+Jonathan Benusa Assignment 8 Output file 05/13/2023
+
+Case 1
+Password: YYCC
+Generated password in hex is: 59594343
+Guesses: 438103
+Time: 0.05712318420410156 seconds
+Guessed Password: YYCC
+
+Case 1
+Password: Qhfv
+Generated password in hex is: 51686676
+Guesses: 17058132
+Time: 2.12188720703125 seconds
+Guessed Password: Qhfv
+
+It took 37.14581455140405 times as long with the expanded character set to guess the password.

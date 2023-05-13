@@ -1,0 +1,718 @@
+John Doe, 5.2.2022, Assignment 6 
+
+
+Initializing buffers 
+ Expected values: 10 512 size buffers, Status Ok
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Requesting 700 
+ Expected values: 
+Assigned address: -2
+
+Actual = Assigned address: -2
+
+Request buffer size 6 
+ Expected values: 
+ 9 510 size buffers, 1 254 size buffer, 1 126 size buffer, 
+ 1 62 size buffer, 1 30 size buffer, 1 14 size buffer and 1 6 size buffer, Status OK
+
+Actual = Assigned address: 4618
+Free Buffer Count:
+9 510 size buffers 
+1 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+1 30 size buffers 
+1 14 size buffers 
+1 6 size buffers
+Status: 
+Ok
+
+Return buffer size 6 
+ Expected values: 
+ 10 510 size buffers, Status OK
+Actual = 
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Request 10 510 buffers 
+ Expected values: 
+ 0 510 buffers, 0 for all buffers, Status Tight 
+Actual = Assigned address: 2
+Actual = Assigned address: 514
+Actual = Assigned address: 1026
+Actual = Assigned address: 1538
+Actual = Assigned address: 2050
+Actual = Assigned address: 2562
+Actual = Assigned address: 3074
+Actual = Assigned address: 3586
+Actual = Assigned address: 4098
+Actual = Assigned address: 4610
+Free Buffer Count:
+0 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Request additional buffer 
+ Expected values: 
+ Assigned address: -1, 
+ 0 510 buffers, Status Tight 
+Actual = Assigned address: -1
+ Debug Output:
+
+Free Buffer Count:
+0 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Return 10 510 buffers 
+ Expected values:
+ 10 510 buffers, Status OK 
+Actual = 
+ Debug Output:
+
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Request 19 254 size buffers 
+ Expected values: 
+ 0 510 buffers, 1 254 size buffers, 0 126 size buffers, 
+ 0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight 
+Actual = Assigned Addresses for size 254: 
+
+Assigned address: 4866
+Assigned address: 4610
+Assigned address: 4354
+Assigned address: 4098
+Assigned address: 3842
+Assigned address: 3586
+Assigned address: 3330
+Assigned address: 3074
+Assigned address: 2818
+Assigned address: 2562
+Assigned address: 2306
+Assigned address: 2050
+Assigned address: 1794
+Assigned address: 1538
+Assigned address: 1282
+Assigned address: 1026
+Assigned address: 770
+Assigned address: 514
+Assigned address: 258
+
+ Debug Output:
+
+Free Buffer Count:
+0 510 size buffers 
+1 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Request 1 510 Buffer after there is only 1 254 left. 
+Expected values: -1
+Actual = -1
+
+Return 19 254 size buffers 
+ Expected values: 
+ 10 510 buffers, 0 254 size buffers, 0 126 size buffers,
+ 0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status OK
+Actual = Assigned Addresses for size 254: 
+
+
+ Debug Output:
+
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Step 9 testing multiple requests: 5 size 6, 2 size 254, 2 size 126, 7 510 size 
+ Expected values: 
+ 1 510 size buffers,  0 254 size buffer, 1 126 size buffer,
+ 1 62 size buffer, 0 30 size buffer, 1 14 size buffer 	and 1 6 size buffer, Status tight
+Actual = Assigned Addresses for size 6:
+Assigned address: 522
+Assigned address: 514
+Assigned address: 538
+Assigned address: 530
+Assigned address: 554
+ 
+Assigned Addresses for size 126: 
+Assigned address: 642
+Assigned address: 898
+ 
+Assigned Addresses for size 254: 
+Assigned address: 1282
+Assigned address: 1026
+ 
+Assigned Addresses for size 510: 
+Assigned address: 2
+Assigned address: 4610
+Assigned address: 4098
+Assigned address: 3586
+Assigned address: 3074
+Assigned address: 2562
+Assigned address: 2050
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+1 14 size buffers 
+1 6 size buffers
+Status: 
+Tight
+
+Return buffers in a different order. We should see buddies eventually combine
+
+Return 6 size buffers first, call debug and status between each return
+
+Returning 522 size 6 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+1 14 size buffers 
+2 6 size buffers
+Status: 
+Tight
+
+Returning 514 size 6 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+2 14 size buffers 
+1 6 size buffers
+Status: 
+Tight
+
+Returning 538 size 6 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+2 14 size buffers 
+2 6 size buffers
+Status: 
+Tight
+
+Returning 530 size 6 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+1 30 size buffers 
+1 14 size buffers 
+1 6 size buffers
+Status: 
+Tight
+
+Returning 554 size 6 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Return 254 size buffers second, call debug and status between each return
+
+Returning 1282 size 254 buffer 
+ DebugOutput: 
+Free Buffer Count:
+1 510 size buffers 
+1 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Returning 1026 size 254 buffer 
+ DebugOutput: 
+Free Buffer Count:
+2 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Return 510 size buffers third, call debug and status between each return
+
+Returning 2 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+3 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 4610 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+4 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 4098 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+5 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 3586 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+6 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 3074 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+7 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 2562 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+8 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 2050 size 510 buffer 
+ DebugOutput: 
+Free Buffer Count:
+9 510 size buffers 
+0 254 size buffers 
+2 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Return 126 size buffers third, call debug and status between each return
+
+Returning 642 size 126 buffer 
+ Expected values: 
+ 1 510 size buffers, 1 254 size buffer, 0 126 size buffer, 
+ 1 62 size buffer, 0 30 size buffer, 1 14 size buffer 	and 1 6 size buffer, Status tight 
+ DebugOutput: 
+Free Buffer Count:
+9 510 size buffers 
+1 254 size buffers 
+1 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Returning 898 size 126 buffer 
+ Expected values: 
+ 1 510 size buffers, 1 254 size buffer, 0 126 size buffer, 
+ 1 62 size buffer, 0 30 size buffer, 1 14 size buffer 	and 1 6 size buffer, Status tight 
+ DebugOutput: 
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+Expected values: 
+ 10 510 size buffers, 0 254 size buffer, 0 126 size buffer, 
+ 0 62 size buffer, 0 30 size buffer, 0 14 size buffer 	and 0 6 size buffer, Status tight 
+ DebugOutput: 
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Request 39 126 size buffers 
+ Expected values: 
+ 0 510 buffers, 0 254 size buffers, 1 126 size buffers, 
+ 0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight 
+Actual = Assigned Addresses for size 126: 
+
+Assigned address: 2178
+Assigned address: 2050
+Assigned address: 2434
+Assigned address: 2306
+Assigned address: 2690
+Assigned address: 2562
+Assigned address: 2946
+Assigned address: 2818
+Assigned address: 3202
+Assigned address: 3074
+Assigned address: 3458
+Assigned address: 3330
+Assigned address: 3714
+Assigned address: 3586
+Assigned address: 3970
+Assigned address: 3842
+Assigned address: 4226
+Assigned address: 4098
+Assigned address: 4482
+Assigned address: 4354
+Assigned address: 4738
+Assigned address: 4610
+Assigned address: 4994
+Assigned address: 4866
+Assigned address: 130
+Assigned address: 2
+Assigned address: 386
+Assigned address: 258
+Assigned address: 1154
+Assigned address: 1026
+Assigned address: 1410
+Assigned address: 1282
+Assigned address: 642
+Assigned address: 514
+Assigned address: 898
+Assigned address: 770
+Assigned address: 1666
+Assigned address: 1538
+Assigned address: 1922
+
+ Debug Output:
+
+Free Buffer Count:
+0 510 size buffers 
+0 254 size buffers 
+1 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Request 1 254 Buffer after there is only 1 126 left. 
+Expected values: -1
+Actual = -1
+
+Return 39 126 size buffers 
+ Expected values: 
+ 10 510 buffers, 0 254 size buffers, 0 126 size buffers, 
+ 0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status OK
+Actual = 
+
+
+ Debug Output:
+
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Request 79 62 size buffers 
+ Expected values: 
+ 0 510 buffers, 0 254 size buffers, 0 126 size buffers, 
+ 1 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status Tight 
+Actual = Assigned Addresses for size 62: 
+
+Assigned address: 1602
+Assigned address: 1538
+Assigned address: 1730
+Assigned address: 1666
+Assigned address: 1858
+Assigned address: 1794
+Assigned address: 1986
+Assigned address: 1922
+Assigned address: 578
+Assigned address: 514
+Assigned address: 706
+Assigned address: 642
+Assigned address: 834
+Assigned address: 770
+Assigned address: 962
+Assigned address: 898
+Assigned address: 1090
+Assigned address: 1026
+Assigned address: 1218
+Assigned address: 1154
+Assigned address: 1346
+Assigned address: 1282
+Assigned address: 1474
+Assigned address: 1410
+Assigned address: 66
+Assigned address: 2
+Assigned address: 194
+Assigned address: 130
+Assigned address: 322
+Assigned address: 258
+Assigned address: 450
+Assigned address: 386
+Assigned address: 4674
+Assigned address: 4610
+Assigned address: 4802
+Assigned address: 4738
+Assigned address: 4930
+Assigned address: 4866
+Assigned address: 5058
+Assigned address: 4994
+Assigned address: 4162
+Assigned address: 4098
+Assigned address: 4290
+Assigned address: 4226
+Assigned address: 4418
+Assigned address: 4354
+Assigned address: 4546
+Assigned address: 4482
+Assigned address: 3650
+Assigned address: 3586
+Assigned address: 3778
+Assigned address: 3714
+Assigned address: 3906
+Assigned address: 3842
+Assigned address: 4034
+Assigned address: 3970
+Assigned address: 3138
+Assigned address: 3074
+Assigned address: 3266
+Assigned address: 3202
+Assigned address: 3394
+Assigned address: 3330
+Assigned address: 3522
+Assigned address: 3458
+Assigned address: 2626
+Assigned address: 2562
+Assigned address: 2754
+Assigned address: 2690
+Assigned address: 2882
+Assigned address: 2818
+Assigned address: 3010
+Assigned address: 2946
+Assigned address: 2114
+Assigned address: 2050
+Assigned address: 2242
+Assigned address: 2178
+Assigned address: 2370
+Assigned address: 2306
+Assigned address: 2498
+
+ Debug Output:
+
+Free Buffer Count:
+0 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Tight
+
+Request 1 126 Buffer after there is only 1 62 left. 
+Expected values: -1
+Actual = -1
+
+Return 79 62 size buffers 
+ Expected values: 
+ 10 510 buffers, 0 254 size buffers, 0 126 size buffers, 
+ 0 62 size buffers, 0 30 size buffers, 0 14 size buffers,  0 6 size buffers Status OK
+Actual = 
+
+
+ Debug Output:
+
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Request 3 12 size buffers 
+ Expected values: 
+ 9 510 buffers, 1 254 size buffers, 1 126 size buffers, 
+ 1 62 size buffers, 0 30 size buffers, 1 14 size buffers,  0 6 size buffers Status Tight 
+Actual = Assigned Addresses for size 12: 
+
+Assigned address: 2066
+Assigned address: 2050
+Assigned address: 2098
+
+ Debug Output:
+
+Free Buffer Count:
+9 510 size buffers 
+1 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+0 30 size buffers 
+1 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Return 2 14 size buffers 
+ Expected values: 
+ 9 510 buffers, 1 254 size buffers, 1 126 size buffers, 
+ 1 62 size buffers,  30 size buffers, 1 14 size buffers,  0 6 size buffers Status OK
+Actual =
+
+ Debug Output:
+
+Free Buffer Count:
+9 510 size buffers 
+1 254 size buffers 
+1 126 size buffers 
+1 62 size buffers 
+1 30 size buffers 
+1 14 size buffers 
+0 6 size buffers
+Status: 
+Ok
+
+Return 1 final 14 size buffers 
+ Expected values: 
+ 9 510 buffers, 1 254 size buffers, 1 126 size buffers, 
+ 1 62 size buffers,  30 size buffers, 1 14 size buffers,  0 6 size buffers Status OK
+Actual =
+
+ Debug Output:
+
+Free Buffer Count:
+10 510 size buffers 
+0 254 size buffers 
+0 126 size buffers 
+0 62 size buffers 
+0 30 size buffers 
+0 14 size buffers 
+0 6 size buffers
+Status: 
+Ok

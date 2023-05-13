@@ -1,0 +1,13 @@
+The num 19986 is in:
+ Page number = 4
+ Offset = 3602
+
+
+The num 347892 is in:
+ Page number = 84
+ Offset = 3828
+
+
+The num 5978 is in:
+ Page number = 1
+ Offset = 1882

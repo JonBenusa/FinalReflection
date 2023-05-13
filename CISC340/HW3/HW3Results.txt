@@ -1,0 +1,23 @@
+Jonathan Benusa
+HW 3
+
+On the 10 th time: Short = 5120, Unsigned Short = 5120, and Int = 5120.
+On the 20 th time: Short = 10240, Unsigned Short = 10240, and Int = 10240.
+On the 30 th time: Short = 15360, Unsigned Short = 15360, and Int = 15360.
+On the 40 th time: Short = 20480, Unsigned Short = 20480, and Int = 20480.
+On the 50 th time: Short = 25600, Unsigned Short = 25600, and Int = 25600.
+On the 60 th time: Short = 30720, Unsigned Short = 30720, and Int = 30720.
+On the 70 th time: Short = -29696, Unsigned Short = 35840, and Int = 35840.
+On the 80 th time: Short = -24576, Unsigned Short = 40960, and Int = 40960.
+On the 90 th time: Short = -19456, Unsigned Short = 46080, and Int = 46080.
+On the 100 th time: Short = -14336, Unsigned Short = 51200, and Int = 51200.
+On the 110 th time: Short = -9216, Unsigned Short = 56320, and Int = 56320.
+On the 120 th time: Short = -4096, Unsigned Short = 61440, and Int = 61440.
+On the 130 th time: Short = 1024, Unsigned Short = 1024, and Int = 66560.
+On the 140 th time: Short = 6144, Unsigned Short = 6144, and Int = 71680.
+On the 150 th time: Short = 11264, Unsigned Short = 11264, and Int = 76800.
+On the 160 th time: Short = 16384, Unsigned Short = 16384, and Int = 81920.
+On the 170 th time: Short = 21504, Unsigned Short = 21504, and Int = 87040.
+On the 180 th time: Short = 26624, Unsigned Short = 26624, and Int = 92160.
+On the 190 th time: Short = 31744, Unsigned Short = 31744, and Int = 97280.
+On the 200 th time: Short = -28672, Unsigned Short = 36864, and Int = 102400.

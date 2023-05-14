@@ -1,0 +1,2 @@
+This code operates basic encryption. It asks the user to enter a message that is less than 1000 chars long. It asks if the user wants to encrypt 
+or decrypt their message. Then will print out the encrypted or decrypted response.

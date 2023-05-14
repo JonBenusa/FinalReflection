@@ -1,0 +1,2 @@
+More basic operations. Now swaping values around and printing results of all of the operations. This program helped me start to do a better 
+job keeping track of different variable assignments and getting used to the language.

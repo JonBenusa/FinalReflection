@@ -1,0 +1,1 @@
+This project required us to write two functions that converted integers from decimal to binary values.

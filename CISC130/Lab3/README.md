@@ -1,0 +1,1 @@
+This code takes inputs from a user and will calculate and return their score for the card game 3-card Myre.

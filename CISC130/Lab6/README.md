@@ -1,0 +1,1 @@
+This code is a mock election voting counter. It will keep track of votes, display cannidates, and calculate the winner of the election.

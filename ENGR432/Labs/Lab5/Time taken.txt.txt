@@ -1,0 +1,5 @@
+Time taken for program to run in seconds:
+2.40
+3.10
+1.49
+0.89

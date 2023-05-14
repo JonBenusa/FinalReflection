@@ -1,0 +1,2 @@
+This program is essentially rock paper scissors against the computer. It takes inouts from the user (0, 1, or 2) and will say what the pc played.
+It will also tell if the user won or lost based on both the pc's choice and the user's.

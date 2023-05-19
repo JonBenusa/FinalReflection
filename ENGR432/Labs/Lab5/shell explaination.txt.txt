@@ -1,2 +1,0 @@
-Shell files use commands that are part of the linux commands to write a file that can be ran simply by stating the name of the file.
-They seem to be more difficult to write, but way easier to run than a C file is, since I didn't need to install and use a compiler like gcc.

@@ -1,0 +1,5 @@
+# Lab2_1.c : Light up the orange LED on the board. You might have to press Reset after you download code to the board via the Debugger.
+# Lab2_2.c: Modify Lab2_1.c. Light up the orange, green, blue and red LED on the board.
+# Lab2_3.c: Modify Lab2_2.c. Light up the orange, green, blue and red LED on the board ONLY after the USER button is pressed.
+# Lab2_4.c: Modify Lab2_3.c code such that the four lights will continuously toggle until the USER button is pressed. The four lights will start toggling again once the USER button is pressed again.  This behavior should repeat all the time.
+# Lab2_5.c: Modify Lab2_4.c code such that if the USER button is pressed once, the BLUE LED is lit. If the USER button is pressed TWICE QUICKLY then the ORANGE LED is lit. If the USER button is pressed THRICE quickly all four lights are lit

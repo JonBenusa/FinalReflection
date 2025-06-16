@@ -1,39 +1,8 @@
 # FinalReflection
-A repository containing all of the projects that I have worked on during my time at UST.
+As I approach graduation, I’m filled with a mix of excitement and reflection. Studying computer science has been a journey through algorithms, programming, and problem-solving. For years, I wondered how this technical knowledge would translate into real-world impact. Now, as I begin a career developing software for utility companies, I have my answer.
 
-As I stand on the precipice of my college graduation, my mind is filled with a myriad of emotions, from excitement to nervousness, and 
-everything in between. As a computer science student, I have spent countless hours immersed in the world of algorithms, programming languages, 
-and software development. Throughout this journey, I often found myself pondering how all of these technical skills and knowledge would 
-translate into making a tangible difference in the real world. Now, as I embark on a career path where I will be writing software for utility 
-companies to ensure the safety of their linemen, that question has finally found its answer.
+Helping protect linemen—those who risk their lives to maintain our power infrastructure—gives deep purpose to my work. Through software, I can improve safety, streamline operations, and enhance decision-making in the field.
 
-The prospect of contributing to the common good through my work is deeply gratifying. Utility companies play a crucial role in powering our 
-communities and keeping the infrastructure running smoothly. However, the work of linemen, who brave hazardous conditions to maintain and repair 
-power lines, is fraught with risks. Their safety is of paramount importance, and it is here that I see an opportunity to leverage my computer 
-science education to make a positive impact.
+Using data analysis and machine learning, we can identify patterns, predict risks, and prioritize preventative action. With user-friendly tools, linemen can access real-time information, make informed decisions, and stay safe. Strong communication systems will further ensure timely coordination during critical operations.
 
-By developing software solutions tailored specifically to the needs of utility companies, I can help streamline their operations, enhance 
-efficiency, and ultimately keep linemen safe. One aspect that comes to mind is the use of data analysis and machine learning algorithms to 
-identify patterns and predict potential hazards. By analyzing vast amounts of data collected from various sources, such as weather conditions, 
-historical incidents, and maintenance records, I can assist in identifying high-risk areas and preemptive measures to mitigate potential dangers.
-
-Moreover, through my computer science background, I can contribute to the creation of user-friendly interfaces and intuitive tools for linemen. 
-These applications can provide real-time information, such as live updates on power lines, potential faults, and safety protocols. By designing 
-software that is easy to navigate and understand, I can empower linemen to make informed decisions quickly, improving their overall safety and 
-reducing the risk of accidents.
-
-Furthermore, the ability to develop efficient communication systems within utility companies can also greatly contribute to the common good. 
-Timely and accurate information exchange between linemen, supervisors, and other stakeholders can ensure coordinated efforts and swift response 
-to emergencies. Through my knowledge of networking and software development, I can design robust communication platforms that facilitate 
-seamless collaboration and enhance overall operational efficiency.
-
-Reflecting upon my journey in computer science, I am filled with a sense of purpose and gratitude. The knowledge and skills I have acquired 
-throughout my education have equipped me with the means to make a meaningful difference in the world. As I prepare to step into the professional 
-realm, I am eager to apply my expertise and passion to contribute to the common good by developing software that helps keep linemen safe within 
-utility companies.
-
-In the grand tapestry of society, each thread plays a vital role, and I am grateful to have found my niche where technology intersects with the 
-betterment of humanity. As I venture forth armed with my computer science degree, I am filled with hope, knowing that my work has the potential 
-to safeguard those who dedicate themselves to providing essential services. With humility and dedication, I embrace this opportunity to 
-contribute to the common good, one line of code at a time
-
+Reflecting on my time in computer science, I’m grateful for the knowledge I’ve gained and the opportunity to apply it toward something meaningful. As I enter the professional world, I do so with purpose: to use technology in service of those who keep our communities running—one line of code at a time.
